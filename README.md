@@ -58,7 +58,7 @@ We do demo on demand [Ask for a demo](https://www.postajob.io/get-a-demo/)
 
 ## Help and support
 
-We'd love to hear feedback from you and we're also here to help if you have any challenges. We have lots of answers to popular questions in our [FAQ](https://github.com/postajob/api/blob/master/README.md#faq). Failing that, feel free to contact our [Support teamn](mailto:contact@postajob.io) .
+We'd love to hear feedback from you and we're also here to help if you have any challenges. We have lots of answers to popular questions in our [FAQ](https://github.com/postajob/api/blob/master/README.md#faq). Failing that, feel free to contact our [Support team](mailto:contact@postajob.io) .
 
 
 
