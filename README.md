@@ -67,7 +67,7 @@ We'd love to hear feedback from you and we're also here to help if you have any 
 Please find bellow all channels we gathered from differents sources. If you want to suggest a new channel, please go here [Suggest a new channel](https://sebastien168902.typeform.com/to/R0mm81) 
 
 
-* [Jobboard]Google for job [more info](https://www.postajob.io/get-a-demo/) 
+* [Jobboard] Google for job [more info](https://www.postajob.io/get-a-demo/) 
 * [Ask for a demo](https://www.postajob.io/get-a-demo/) 
 
 
