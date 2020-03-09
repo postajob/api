@@ -34,6 +34,38 @@ The most simple method to make your first API call is to use cURL.
 
 ```herte```
 
+
+#### Get campaigns
+
+
+#### Create a new campaign
+Create your campaign. The more you add properties, the best we can target the right audience .
+@TODO CURL
+@TODO RESPONSE
+
+#### Update a campaign
+@TODO CURL
+@TODO RESPONSE
+
+#### Delete a campaign
+Delete a specifique campaign 
+@TODO CURL
+@TODO RESPONSE
+
+#### Get a campaign
+Get a campaign with its unique ID 
+@TODO CURL
+@TODO RESPONSE
+
+#### Publish your job campaign 
+If you campaign has no budget, we will still publish your job on all our fremium jobboards ( googleforjob, indeed, adzuna, joblift, etc ....)
+Some properties are mandatory for publishing your campaign. Here is the rule : 
+@TODO RULE
+@TODO CURL
+@TODO RESPONSE
+
+
+
 # API reference
 
 ## Campaign
