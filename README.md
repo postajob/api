@@ -56,8 +56,13 @@ We’re deeply focused on easy and smart job diffusion
 We do demo on demand [Ask for a demo](https://www.postajob.io/get-a-demo/) 
 
 
+# Help and support
 
-# CHANNELS LISTS
+We'd love to hear feedback from you and we're also here to help if you have any challenges. We have lots of answers to popular questions in our FAQ. Failing that, feel free to contact our [Support teamn](mailto:contact@postajob.io) .
+
+
+
+# Channels list
 
 Please find bellow all channels we gathered from differents sources. If you want to suggest a new channel, please go here [Suggest a new channel](https://sebastien168902.typeform.com/to/R0mm81) 
 
