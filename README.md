@@ -12,8 +12,28 @@ Postajob is a simple concept - you submit your jobs description and properties i
 
 ![HOME POSTAJOB](https://github.com/postajob/api/blob/master/images/home.png)
 
+# Making your first API call
 
-# API REFERENCE
+We've written a quick step-by-step guide to walk you through how to create a PostAjob Developer account, make your first API call, and interpret the results.
+
+## STEP 1: Register as a Developer 
+
+ If you are an existing Postajob user, log in to your dashboard. If not, sign-up for postajob  - it's free to test.
+
+## STEP 2: Get your APP ID and API Key
+
+Once you’ve registered, and confirmed your email, you’ll be able to access your Dashboard. Here you’ll find your ‘(API) Key’. Make a note of these key, you will use them in the next step.
+
+![APIKEY POSTAJOB](https://github.com/postajob/api/blob/master/images/apikey.png)
+
+Oh, and we automatically created your first campaign, to save you some time. You can rename this anytime.
+
+## STEP 3: Make your first API call
+The most simple method to make your first API call is to use cURL.
+
+```herte```
+
+# API reference
 
 ## FAQ 
 
@@ -24,6 +44,8 @@ Founded in 2018, we’re headquartered in Amsterdam office offices in Netherland
 
 
 # CHANNELS LISTS
+
+Please find bellow all channels we gathered from differents sources. If you want to suggest a new channel, please go here [Suggest a new channel](https://sebastien168902.typeform.com/to/R0mm81) 
 
 
 
