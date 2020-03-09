@@ -10,6 +10,8 @@ Our API simplifies how developers and businesses publish jobs into their softwar
 ## How it works
 Postajob is a simple concept - you submit your jobs description and properties into our API, and we dispatch it to the best channels. The API returns a bunch of useful data about the reach, clic estimation and application estimation. All channels available are visible [here](https://directory.postajob.io/). 
 
+![HOME POSTAJOB](https://github.com/postajob/api/blob/master/images/home.png)
+
 
 # API REFERENCE
 
