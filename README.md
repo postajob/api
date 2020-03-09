@@ -9,7 +9,7 @@
 Our API simplifies how developers and businesses publish jobs into their software. PostAJob's API is a tool for web developers to build HR solutions. If you don't have easy access to development resources, we can recommend excellent third-party partners. To learn more about postajob and how you can use our solution to transform your business, please contact our [sales team](mailto:contact@postajob.io).
 
 ## How it works
-Postajob is a simple concept - you submit your jobs description and properties into our API, and we dispatch it to the best channels. The API returns a bunch of useful data about the reach, clic estimation and application estimation. All channels available are visible [here](https://directory.postajob.io/). 
+Postajob is a simple concept - you submit your job description and properties into our API, and we dispatch it to the best channels. The API returns a bunch of useful data about the reach, clic estimation and application estimation. All channels available are visible [here](https://directory.postajob.io/). 
 
 ![HOME POSTAJOB](https://github.com/postajob/api/blob/master/images/home.png)
 
@@ -82,8 +82,8 @@ The most simple method to make your first API call is to use cURL.
 
 ### How much does it cost to use Post a job ?
 We offer straightforward pricing that compliments your usage needs and business goals.
-We have a freemium version you can try who will post on more than 10 differents channels (Google for job, Indeed, Joblift, Jooble etc ....) . You can try without credit card.
-Then , you can add a budget to your campaign and we will start to advertise your job, on top of free channels on paid channels ( facebook , google , linkedin depending the profil and the localisation )
+We have a freemium version you can try including for free more than 10 differents channels (Google for job, Indeed, Joblift, Jooble etc ....). You can try without credit card.
+Then, you can add a budget to your campaign and we will start to advertise your job, (on top of free channels) on all other paid channels ( facebook , google , linkedin, job boards etc regarding profil and the localisation )
 
 ## FAQ 
 
