@@ -2,6 +2,7 @@
 
 
 
+
 # Overview 
 
 ## Introduction
@@ -41,6 +42,19 @@ The most simple method to make your first API call is to use cURL.
 
 Postajob provides state-of-the-art, api to post your job on multiple platforms to hire peoples worldwide. Through one API, you can reach thousand of channels : jobboard, facebook ads for job, google ads for job, reddit ads, quora ads, niche jobboards etc. 
 Founded in 2018, we’re headquartered in Amsterdam office offices in Netherlands. We’re a venture backed organization with customers all over the world. [Learn more about Postajob.](https://postajob.io/)
+
+### How to use Post a job
+
+Post a job is designed for software developers and we’ve made it simple to interact with our technology via an API (ask your tech team). Just integrate with our easy to code endpoints to get up and running.
+
+### What features does Postajob offer?
+
+We’re deeply focused on easy and smart job diffusion 
+
+### Do you have a Demo?
+
+We do demo on demand [Ask for a demo](https://www.postajob.io/get-a-demo/) 
+
 
 
 # CHANNELS LISTS
