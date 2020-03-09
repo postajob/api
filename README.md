@@ -36,6 +36,48 @@ The most simple method to make your first API call is to use cURL.
 
 # API reference
 
+## Campaign
+
+| name | type | description |
+| --- | --- | --- |
+|name (required)|String|Name of your job|
+|category|String|Category of the job. Is mandatory for publising the campaign|
+|description|String|Full text description of your job. Can contain html tags. Must be at least 100 caracters for publishing.|
+|company_name|String|Name of the recruiting company|
+|company_website|String|Website of the recruiting company|
+|company_country|String|Country of the recruiting company|
+|company_logo|String|Logo of the recruiting company. Should be a valid url to a .png or .jpg image|
+|contract|String|Under which contract is this job. Contract is mandatory for publishing|
+|education|String|The education the applicant should have|
+|experience|String|The experience the applicant should have|
+|salary.min|Number|Minimum salary for the job|
+|salary.max|Number|Maximum salary for the job|
+|salary.unit|String|The unit fo the salary|
+|salary.currency|String|The currency of the salary|
+|budget|Number|Budget you want to set for your campaign. You need to add a budget on your campaign from our dashboard|
+|age_range.min|Number|Age minimum for the job ( useful for google ads and facebook ads job posting ) |
+|age_range.max|Number|Age maximum for the job ( useful for google ads and facebook ads job posting ) |
+|cities|Array||
+|locations|Array||
+|skills|Array|Skills for the needed. Useful to target niche dashboard of for a google ads or facebook ads job |
+|interests|Array|Interest of the candidate. Useful to target niche dashboard of for a google ads or facebook ads job |
+|language|Array|Language spoke by the applicant. Useful to check in multiple country which this languages|
+|banner|String|Background image of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ...|
+|title|String|Title of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ...|
+|text_1|String|Main text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ...|
+|text_2|String|Secondary text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ...|
+|url|String|Url of the job on your website. Mantory for the campaign publishing|
+|status|String|Status of your campaign. Is read only value|
+|user_id (required)|String|User id. Auto-generated|
+|client_id|String|If you represent multiple employers|
+|created_at|Date|Auto-generated|
+|updated_at|Date|Auto-generated|
+|live_at|Date|Auto-generated|
+|end_at|Date|Auto-generated. 30 days after the live at date|
+
+
+# OTHER
+
 ## FAQ 
 
 ### What is Postajob?
