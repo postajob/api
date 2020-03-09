@@ -34,7 +34,8 @@ The most simple method to make your first API call is to use cURL.
 
 ```curl --request GET \
   --url https://emsiservices.com/jpa/status \
-  --header 'authorization: Bearer <ACCESS_TOKEN>'```
+  --header 'authorization: Bearer <ACCESS_TOKEN>'
+ ```
 
 
 #### Get campaigns
