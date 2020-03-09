@@ -32,7 +32,9 @@ Oh, and we automatically created your first campaign, to save you some time. You
 ## STEP 3: Make your first API call
 The most simple method to make your first API call is to use cURL.
 
-```herte```
+```curl --request GET \
+  --url https://emsiservices.com/jpa/status \
+  --header 'authorization: Bearer <ACCESS_TOKEN>'```
 
 
 #### Get campaigns
