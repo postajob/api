@@ -78,6 +78,13 @@ The most simple method to make your first API call is to use cURL.
 
 # OTHER
 
+## Pricing & Billing
+
+### How much does it cost to use Post a job ?
+We offer straightforward pricing that compliments your usage needs and business goals.
+We have a freemium version you can try who will post on more than 10 differents channels (Google for job, Indeed, Joblift, Jooble etc ....) . You can try without credit card.
+Then , you can add a budget to your campaign and we will start to advertise your job, on top of free channels on paid channels ( facebook , google , linkedin depending the profil and the localisation )
+
 ## FAQ 
 
 ### What is Postajob?
