@@ -198,7 +198,7 @@ curl --location --request POST 'https://api.postajob.io/v1/campaign' --header 'C
 
 #### Update a campaign
 ```
-curl --location --request PUT 'http://localhost:3000/v1/campaign/5e6a1df22579f20fbfab73bc' --header 'x-apikey: xxxx-xxxxx-xxxxx' --data-raw '{ "name": "Test3" }'
+curl --location --request PUT 'https://api.postajob.io/v1/campaign/5e6a1df22579f20fbfab73bc' --header 'x-apikey: xxxx-xxxxx-xxxxx' --data-raw '{ "name": "Test3" }'
 ```
 
 
@@ -242,7 +242,7 @@ curl --location --request PUT 'http://localhost:3000/v1/campaign/5e6a1df22579f20
 Delete a specifique campaign 
 
 ```
-curl --location --request DELETE 'http://localhost:3000/v1/campaign/5e6a1df22579f20fbfab73bc' --header 'x-apikey: xxxx-xx-xxxxxx-xxxxxx' 
+curl --location --request DELETE 'https://api.postajob.io/v1/campaign/5e6a1df22579f20fbfab73bc' --header 'x-apikey: xxxx-xx-xxxxxx-xxxxxx' 
 ```
 
 ```
@@ -255,7 +255,7 @@ curl --location --request DELETE 'http://localhost:3000/v1/campaign/5e6a1df22579
 Get a campaign with its unique ID 
 
 ```
-curl --location --request GET 'http://localhost:3000/v1/campaign/5e6a1d8edf2bf773891ff1df' --header 'x-apikey: xxxx-xxxxx-xxxxx-xxxx' 
+curl --location --request GET 'https://api.postajob.io/v1/campaign/5e6a1d8edf2bf773891ff1df' --header 'x-apikey: xxxx-xxxxx-xxxxx-xxxx' 
 ```
 
 Answer 
