@@ -7,7 +7,7 @@
   * [STEP 1: Register as a Developer](#step-1--register-as-a-developer)
   * [STEP 2: Get your APP ID and API Key](#step-2--get-your-app-id-and-api-key)
   * [STEP 3: Make your first API call](#step-3--make-your-first-api-call)
-- [API REFERENCE](#api-reference)
+- [API Reference](#api-reference)
   * [Get campaigns](#get-campaigns)
   * [Create a new campaign](#create-a-new-campaign)
   * [Update a campaign](#update-a-campaign)
@@ -16,7 +16,7 @@
   * [Publish your job campaign](#publish-your-job-campaign)
 - [API reference](#api-reference)
   * [Campaign](#campaign)
-- [OTHER](#other)
+- [Other](#other)
   * [Pricing & Billing](#pricing---billing)
     + [How much does it cost to use Post a job ?](#how-much-does-it-cost-to-use-post-a-job--)
   * [FAQ](#faq)
@@ -114,7 +114,7 @@ curl --location --request GET 'https://api.postajob.io/v1/campaign' --header 'Co
 Congrats !!
 
 
-# API REFERENCE 
+# API Reference 
 
 You can find a postman with all requests here : https://www.getpostman.com/collections/135f9fbe499d60624e4d
 
@@ -382,7 +382,7 @@ Some properties are mandatory for publishing your campaign. Here is the rule :
 |end_at|Date|Auto-generated. 30 days after the live at date|
 
 
-# OTHER
+# Other
 
 ## Pricing & Billing
 
