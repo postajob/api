@@ -32,19 +32,58 @@ Oh, and we automatically created your first campaign, to save you some time. You
 ## STEP 3: Make your first API call
 The most simple method to make your first API call is to use cURL.
 
-```curl --request GET \
-  --url https://emsiservices.com/jpa/status \
-  --header 'authorization: Bearer <ACCESS_TOKEN>'
+```
+curl --location --request GET 'https://api.postajob.io/v1/campaign' --header 'Content-Type: application/json' --header 'x-apikey: xxxxxx-xxxxxx-xxxxxx-xxxxxx' 
  ```
+
+Note : You can find a postman with all requests here : https://www.getpostman.com/collections/135f9fbe499d60624e4d
 
 
 #### Get campaigns
 
 
 #### Create a new campaign
-Create your campaign. The more you add properties, the best we can target the right audience .
-@TODO CURL
-@TODO RESPONSE
+Create your campaign. The more you add properties, the best we can target the right audience.
+
+```
+curl --location --request POST 'https://api.postajob.io/v1/campaign' --header 'Content-Type: application/json' --header 'x-apikey: xxxxxx-xxxxxx-xxxxxx-xxxxxx' --data-raw '{ "name": "Test" }'
+```
+
+
+```
+{
+    "ok": true,
+    "campaign": {
+        "salary": {
+            "min": 0,
+            "max": 0,
+            "unit": "month",
+            "currency": "euro"
+        },
+        "age_range": {
+            "min": 16,
+            "max": 70
+        },
+        "name": "Test",
+        "description": "",
+        "company_name": "",
+        "company_website": "",
+        "company_country": "",
+        "budget": 0,
+        "cities": [],
+        "skills": [],
+        "interests": [],
+        "language": [],
+        "status": "Draft",
+        "created_at": "2020-03-12T11:33:04.847Z",
+        "updated_at": "2020-03-12T11:33:04.847Z",
+        "_id": "5e6a1df22579f20fbfab73bc",
+        "user_id": "5e524da4253a7f7fa174aa76",
+        "locations": [],
+        "__v": 0
+    }
+}
+```
 
 #### Update a campaign
 @TODO CURL
