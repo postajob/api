@@ -1,5 +1,9 @@
 # Table of contents
 
+1. [Introduction](#introduction)
+2. [How it works](#how-it-works)
+3. [Making your first API call](#making-your-first-api-call)
+   3.1. [Register as a Developer](#step-1-register-as-a-developer)
 
 
 
