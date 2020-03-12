@@ -1,10 +1,31 @@
 # Table of contents
 
-1. [Introduction](#introduction)
-2. [How it works](#how-it-works)
-3. [Making your first API call](#making-your-first-api-call)
-   3.1. [Register as a Developer](#step-1-register-as-a-developer)
-
+- [Overview](#overview)
+  * [Introduction](#introduction)
+  * [How it works](#how-it-works)
+- [Making your first API call](#making-your-first-api-call)
+  * [STEP 1: Register as a Developer](#step-1--register-as-a-developer)
+  * [STEP 2: Get your APP ID and API Key](#step-2--get-your-app-id-and-api-key)
+  * [STEP 3: Make your first API call](#step-3--make-your-first-api-call)
+- [API REFERENCE](#api-reference)
+      - [Get campaigns](#get-campaigns)
+      - [Create a new campaign](#create-a-new-campaign)
+      - [Update a campaign](#update-a-campaign)
+      - [Delete a campaign](#delete-a-campaign)
+      - [Get a campaign](#get-a-campaign)
+      - [Publish your job campaign](#publish-your-job-campaign)
+- [API reference](#api-reference)
+  * [Campaign](#campaign)
+- [OTHER](#other)
+  * [Pricing & Billing](#pricing---billing)
+    + [How much does it cost to use Post a job ?](#how-much-does-it-cost-to-use-post-a-job--)
+  * [FAQ](#faq)
+    + [What is Postajob?](#what-is-postajob-)
+    + [How to use Post a job](#how-to-use-post-a-job)
+    + [What features does Postajob offer?](#what-features-does-postajob-offer-)
+    + [Do you have a Demo?](#do-you-have-a-demo-)
+  * [Help and support](#help-and-support)
+- [Channels list](#channels-list)
 
 
 # Overview 
