@@ -197,8 +197,46 @@ curl --location --request POST 'https://api.postajob.io/v1/campaign' --header 'C
 ```
 
 #### Update a campaign
-@TODO CURL
-@TODO RESPONSE
+```
+curl --location --request PUT 'http://localhost:3000/v1/campaign/5e6a1df22579f20fbfab73bc' --header 'x-apikey: xxxx-xxxxx-xxxxx' --data-raw '{ "name": "Test3" }'
+```
+
+
+```
+{
+    "ok": true,
+    "campaign": {
+        "salary": {
+            "min": 0,
+            "max": 0,
+            "unit": "month",
+            "currency": "euro"
+        },
+        "age_range": {
+            "min": 16,
+            "max": 70
+        },
+        "name": "Test3",
+        "description": "",
+        "company_name": "",
+        "company_website": "",
+        "company_country": "",
+        "budget": 0,
+        "cities": [],
+        "skills": [],
+        "interests": [],
+        "language": [],
+        "status": "Draft",
+        "created_at": "2020-03-12T11:33:04.847Z",
+        "updated_at": "2020-03-12T11:33:04.847Z",
+        "_id": "5e6a1df22579f20fbfab73bc",
+        "user_id": "5e524da4253a7f7fa174aa76",
+        "locations": [],
+        "__v": 0
+    }
+}
+
+```
 
 #### Delete a campaign
 Delete a specifique campaign 
