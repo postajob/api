@@ -240,18 +240,76 @@ curl --location --request PUT 'http://localhost:3000/v1/campaign/5e6a1df22579f20
 
 #### Delete a campaign
 Delete a specifique campaign 
-@TODO CURL
-@TODO RESPONSE
+
+```
+curl --location --request DELETE 'http://localhost:3000/v1/campaign/5e6a1df22579f20fbfab73bc' --header 'x-apikey: xxxx-xx-xxxxxx-xxxxxx' 
+```
+
+```
+{
+    "ok": true
+}
+```
 
 #### Get a campaign
 Get a campaign with its unique ID 
-@TODO CURL
-@TODO RESPONSE
+
+```
+curl --location --request GET 'http://localhost:3000/v1/campaign/5e6a1d8edf2bf773891ff1df' --header 'x-apikey: xxxx-xxxxx-xxxxx-xxxx' 
+```
+
+Answer 
+
+```
+{
+    "ok": true,
+    "campaign": {
+        "salary": {
+            "min": 0,
+            "max": 0,
+            "unit": "month",
+            "currency": "euro"
+        },
+        "age_range": {
+            "min": 18,
+            "max": 60
+        },
+        "name": "Rapid API TEST",
+        "description": "",
+        "company_name": "",
+        "company_website": "",
+        "company_country": "Netherlands",
+        "budget": 500,
+        "cities": [],
+        "skills": [],
+        "interests": [],
+        "language": [],
+        "status": "Draft",
+        "created_at": "2020-03-12T11:07:02.846Z",
+        "updated_at": "2020-03-12T11:07:02.846Z",
+        "_id": "5e6a1d8edf2bf773891ff1df",
+        "step": 0,
+        "user_id": "5e524da4253a7f7fa174aa76",
+        "contract": "Full Time",
+        "category": "Accounting",
+        "experience": "Not specified",
+        "education": "No diploma required",
+        "url": "",
+        "title": "",
+        "text_1": "",
+        "text_2": "",
+        "locations": [],
+        "__v": 0
+    }
+}
+```
+
 
 #### Publish your job campaign 
 If you campaign has no budget, we will still publish your job on all our fremium jobboards ( googleforjob, indeed, adzuna, joblift, etc ....)
 Some properties are mandatory for publishing your campaign. Here is the rule : 
 @TODO RULE
+
 @TODO CURL
 @TODO RESPONSE
 
