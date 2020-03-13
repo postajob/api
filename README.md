@@ -347,19 +347,25 @@ Some properties are mandatory for publishing your campaign. Here is the rule :
 | name | type | description |
 | --- | --- | --- |
 |name (required)|String|Name of your job|
-|category|String|Category of the job. Is mandatory for publising the campaign|
+|category|String|Category of the job. Is mandatory for publising the campaign
+ Values possibles : Accounting, Administrative, Arts and Design, Community & Social Services, Consulting, Education, Engineering, Entrepreneurship, Finance, Healthcare Services, Human Resources, Information Technology, Legal, Marketing, Media & Communications, Military & Protective Services, Operations, Program & Product Management, Purchasing, Quality Assurance, Real Estate, Research, Sales, Support, None|
 |description|String|Full text description of your job. Can contain html tags. Must be at least 100 caracters for publishing.|
 |company_name|String|Name of the recruiting company|
 |company_website|String|Website of the recruiting company|
 |company_country|String|Country of the recruiting company|
 |company_logo|String|Logo of the recruiting company. Should be a valid url to a .png or .jpg image|
-|contract|String|Under which contract is this job. Contract is mandatory for publishing|
-|education|String|The education the applicant should have|
-|experience|String|The experience the applicant should have|
+|contract|String|Under which contract is this job. Contract is mandatory for publishing
+ Values possibles : Full Time, Part Time, Freelance, Internship|
+|education|String|The education the applicant should have
+ Values possibles : No diploma required, High school, Bachelor, Master, Doctorate / PhD|
+|experience|String|The experience the applicant should have
+ Values possibles : Not specified, Junior, Mid-Level, Senior|
 |salary.min|Number|Minimum salary for the job|
 |salary.max|Number|Maximum salary for the job|
-|salary.unit|String|The unit fo the salary|
-|salary.currency|String|The currency of the salary|
+|salary.unit|String|The unit fo the salary
+ Values possibles : year, month, day, hour|
+|salary.currency|String|The currency of the salary
+ Values possibles : euro, usd|
 |budget|Number|Budget you want to set for your campaign. You need to add a budget on your campaign from our dashboard|
 |age_range.min|Number|Age minimum for the job ( useful for google ads and facebook ads job posting ) |
 |age_range.max|Number|Age maximum for the job ( useful for google ads and facebook ads job posting ) |
@@ -373,14 +379,14 @@ Some properties are mandatory for publishing your campaign. Here is the rule :
 |text_1|String|Main text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ...|
 |text_2|String|Secondary text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ...|
 |url|String|Url of the job on your website. Mantory for the campaign publishing|
-|status|String|Status of your campaign. Is read only value|
+|status|String|Status of your campaign. Is read only value
+ Values possibles : Draft, Published, Inactive, Cancelled, Live|
 |user_id (required)|String|User id. Auto-generated|
-|client_id|String|If you represent multiple employers|
+|client_id|String|Free field to save your client_id if you have any. You can filter on it when you retrieve campaigns|
 |created_at|Date|Auto-generated|
 |updated_at|Date|Auto-generated|
 |live_at|Date|Auto-generated|
 |end_at|Date|Auto-generated. 30 days after the live at date|
-
 
 # Other
 
