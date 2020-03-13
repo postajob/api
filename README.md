@@ -57,13 +57,12 @@ Oh, and we automatically created your first campaign, to save you some time. You
 ## STEP 3: Make your first API call
 The most simple method to make your first API call is to use cURL.
 
+### Example Request
+
+```curl --location --request GET 'https://api.postajob.io/v1/campaign' --header 'Content-Type: application/json' --header 'x-apikey: xxxxxx-xxxxxx-xxxxxx-xxxxxx' 
 ```
-curl --location --request GET 'https://api.postajob.io/v1/campaign' --header 'Content-Type: application/json' --header 'x-apikey: xxxxxx-xxxxxx-xxxxxx-xxxxxx' 
- ```
- 
- 
- and you will get this answer :
- 
+
+### Example Request 
  ```
  {
     "ok": true,
@@ -123,13 +122,13 @@ You can find a postman with all requests here : https://www.getpostman.com/colle
 Note : You can filter on status, company_name, contract etc ... 
 
 
-Request : 
+### Example Request
 
 ```
 curl --location --request GET 'https://api.postajob.io/v1/campaign' --header 'Content-Type: application/json' --header 'x-apikey: xxxxxx-xxxxxx-xxxxxx-xxxxxx' 
  ```
  
- Answer : 
+ ### Example Response
  
  ```
  {
@@ -181,10 +180,13 @@ curl --location --request GET 'https://api.postajob.io/v1/campaign' --header 'Co
 #### Create a new campaign
 Create your campaign. The more you add properties, the best we can target the right audience.
 
+### Example Request
+
 ```
 curl --location --request POST 'https://api.postajob.io/v1/campaign' --header 'Content-Type: application/json' --header 'x-apikey: xxxxxx-xxxxxx-xxxxxx-xxxxxx' --data-raw '{ "name": "Test" }'
 ```
 
+### Example Response
 
 ```
 {
@@ -222,10 +224,12 @@ curl --location --request POST 'https://api.postajob.io/v1/campaign' --header 'C
 ```
 
 #### Update a campaign
+
 ```
 curl --location --request PUT 'https://api.postajob.io/v1/campaign/5e6a1df22579f20fbfab73bc' --header 'x-apikey: xxxx-xxxxx-xxxxx' --data-raw '{ "name": "Test3" }'
 ```
 
+### Example Response
 
 ```
 {
@@ -270,6 +274,8 @@ Delete a specifique campaign
 curl --location --request DELETE 'https://api.postajob.io/v1/campaign/5e6a1df22579f20fbfab73bc' --header 'x-apikey: xxxx-xx-xxxxxx-xxxxxx' 
 ```
 
+### Example Response
+
 ```
 {
     "ok": true
@@ -283,7 +289,7 @@ Get a campaign with its unique ID
 curl --location --request GET 'https://api.postajob.io/v1/campaign/5e6a1d8edf2bf773891ff1df' --header 'x-apikey: xxxx-xxxxx-xxxxx-xxxx' 
 ```
 
-Answer 
+### Example Response
 
 ```
 {
