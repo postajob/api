@@ -359,40 +359,40 @@ Some properties are mandatory for publishing your campaign. Here is the rule :
 
 | Name               | Description                         |
 | ------------------ | ----------------------------------- |
-| name `required`    | Name of your job <br/> Type: `String` |
-| category           | Category of the job. Is mandatory for publising the campaign.<br/>Possible values : `[Accounting, Administrative, Arts and Design, Community & Social Services, Consulting, Education, Engineering, Entrepreneurship, Finance, Healthcare Services, Human Resources, Information Technology, Legal, Marketing, Media & Communications, Military & Protective Services, Operations, Program & Product Management, Purchasing, Quality Assurance, Real Estate, Research, Sales, Support, None]` <br/> Type: `String` |
-| description        | Full text description of your job. Can contain html tags. Must be at least 100 caracters for publishing. <br/> Type: `String` |
-| company_name       | Name of the recruiting company <br/> Type: `String`|
-| company_website    | Website of the recruiting company <br/> Type: `String`|
-| company_country    | Country of the recruiting company <br/> Type: `String`|
-| company_logo       | Logo of the recruiting company. Should be a valid url to a .png or .jpg image <br/> Type: `String`|
-| contract           | Under which contract is this job. Contract is mandatory for publishing.<br/>Possible values : [Full Time, Part Time, Freelance, Internship] <br/> Type: `String`|
-| education          | The education the applicant should have.<br/>Possible values : `[No diploma required, High school, Bachelor, Master, Doctorate / PhD]` <br/> Type: `String`|
-| experience         | The experience the applicant should have.<br/>Possible values : [Not specified, Junior, Mid-Level, Senior] <br/> Type: `String`|
-| salary.min         | Minimum salary for the job <br/> Type: `Number` <br /> Default: `0`|
-| salary.max         | Maximum salary for the job <br/> Type: `Number` <br /> Default: `0`|
-| salary.unit        | The unit fo the salary.<br/>Possible values : `[year, month, day, hour]` <br /> Default: `month`|
+| name `required`    | Name of your job <br/> Type: `String` <br /> Example: `Web developer` |
+| category           | Category of the job. Is mandatory for publising the campaign.<br/>Possible values : `[Accounting, Administrative, Arts and Design, Community & Social Services, Consulting, Education, Engineering, Entrepreneurship, Finance, Healthcare Services, Human Resources, Information Technology, Legal, Marketing, Media & Communications, Military & Protective Services, Operations, Program & Product Management, Purchasing, Quality Assurance, Real Estate, Research, Sales, Support, None]` <br/> Type: `String` <br /> Example: `Arts and Design` |
+| description        | Full text description of your job. Can contain html tags. Must be at least 100 caracters for publishing. <br/> Type: `String`|
+| company_name       | Name of the recruiting company <br/> Type: `String` <br /> Example: `Postajob`|
+| company_website    | Website of the recruiting company <br/> Type: `String` <br /> Example: `https://postajob.io`|
+| company_country    | Country of the recruiting company <br/> Type: `String` <br /> Example: `Netherlands`|
+| company_logo       | Logo of the recruiting company. Should be a valid url to a .png or .jpg image <br/> Type: `String` <br /> Example: `https://assets.postajob.io/logo.png` |
+| contract           | Under which contract is this job. Contract is mandatory for publishing.<br/>Possible values : [Full Time, Part Time, Freelance, Internship] <br/> Type: `String` <br /> Example: `Full Time`|
+| education          | The education the applicant should have.<br/>Possible values : `[No diploma required, High school, Bachelor, Master, Doctorate / PhD]` <br/> Type: `String` <br /> Example: `Bachelor`|
+| experience         | The experience the applicant should have.<br/>Possible values : `[Not specified, Junior, Mid-Level, Senior]` <br/> Type: `String` <br /> Example: `Mid-Level`|
+| salary.min         | Minimum salary for the job <br/> Type: `Number` <br /> Default: `0` <br /> Example: `1200`|
+| salary.max         | Maximum salary for the job <br/> Type: `Number` <br /> Default: `0` <br /> Example: `1800`|
+| salary.unit        | The unit fo the salary.<br/>Possible values : `[year, month, day, hour]` <br /> Default: `month`, <br /> Example: `year`|
 | salary.currency    | The currency of the salary.<br/>Possible values : `[euro, usd]` <br/> Type: `String` <br /> Default: `euro`|
-| budget             | Budget you want to set for your campaign. You need to add a budget on your campaign from our dashboard <br/> Type: `Number` <br /> Default: `0`|
-| age_range.min      | Age minimum for the job ( useful for google ads and facebook ads job posting ) <br/> Type: `Number` <br /> Default: `16`|
-| age_range.max      | Age maximum for the job ( useful for google ads and facebook ads job posting ) <br/> Type: `Number` <br /> Default: `70`|
-| cities             | <br/> Type: `Array` |
-| locations          | <br/> Type: `Array` |
-| skills             | Skills for the needed. Useful to target niche dashboard of for a google ads or facebook ads job <br/> Type: `Array`|
-| interests          | Interest of the candidate. Useful to target niche dashboard of for a google ads or facebook ads job <br/> Type: `Array`|
-| language           | Language spoke by the applicant. Useful to check in multiple country which this languages <br/> Type: `Array`|
-| banner             | Background image of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String`|
-| title              | Title of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String`|
-| text_1             | Main text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String`|
-| text_2             | Secondary text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String`|
-| url                | Url of the job on your website. Mantory for the campaign publishing <br/> Type: `String`|
-| status             | Status of your campaign. Is read only value.<br/>Possible values : `[Draft, Published, Inactive, Cancelled, Live]` <br/> Type: `String` <br /> Default: `Draft`|
-| user_id `required` | User id. Auto-generated <br/> Type: `String`|
-| client_id          | Free field to save your client_id if you have any. You can filter on it when you retrieve campaigns <br/> Type: `String`|
-| created_at         | Auto-generated <br/> Type: `Date` <br /> Default: `current_timestamp`|
-| updated_at         | Auto-generated <br/> Type: `Date` <br/> Default: `current_timestamp`|
-| live_at            | Auto-generated <br/> Type: `Date` <br/> Default: `current_timestamp`|
-| end_at             | Auto-generated. 30 days after the live at date <br/> Type: `Date` <br/> Default: `current_timestamp`|
+| budget             | Budget you want to set for your campaign. You need to add a budget on your campaign from our dashboard <br/> Type: `Number` <br /> Default: `0` <br /> Example: `1000`|
+| age_range.min      | Age minimum for the job ( useful for google ads and facebook ads job posting ) <br/> Type: `Number` <br /> Default: `16` <br /> Example: `20`|
+| age_range.max      | Age maximum for the job ( useful for google ads and facebook ads job posting ) <br/> Type: `Number` <br /> Default: `70` <br /> Example: `28`|
+| cities             | <br/> Type: `Array` <br /> Example: `[Amsterdam, Rotterdam, The Hague, Utrecht, ...]` |
+| locations          | <br/> Type: `Array` <br /> Example: `[{name : "Paris"}, {name:"Islamabad"}]`|
+| skills             | Skills for the needed. Useful to target niche dashboard of for a google ads or facebook ads job <br/> Type: `Array` <br /> Example: `[Design, Testing, ..]`|
+| interests          | Interest of the candidate. Useful to target niche dashboard of for a google ads or facebook ads job <br/> Type: `Array` <br /> Example: `[Learning, Travelling, ..]`|
+| language           | Language spoke by the applicant. Useful to check in multiple country which this languages <br/> Type: `Array` <br /> Example: `[English, French, ..]`|
+| banner             | Background image of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `https://assets.postajob.io/cover.png`|
+| title              | Title of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `Web Developer required`|
+| text_1             | Main text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `Join a innovative startup . TOP 50 EU`|
+| text_2             | Secondary text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `We are looking for a React Native developer interested in building performant mobile apps on both the iOS and Android platforms. You will be responsible for architecting and building these applications, as well as coordinating with the teams responsible for other layers of the...`|
+| url                | Url of the job on your website. Mantory for the campaign publishing <br/> Type: `String` <br /> Example: `https://postajob.io`|
+| status             | Status of your campaign. Is read only value.<br/>Possible values : `[Draft, Published, Inactive, Cancelled, Live]` <br/> Type: `String` <br /> Default: `Draft` <br /> Example: `Live`|
+| user_id `required` | User id. Auto-generated <br/> Type: `String` <br /> Example: `2asccuionbzcc1e12`|
+| client_id          | Free field to save your client_id if you have any. You can filter on it when you retrieve campaigns <br/> Type: `String` <br /> Example: `2asccuionbzcc1e12`|
+| created_at         | Auto-generated <br/> Type: `Date` <br /> Default: `current_timestamp` <br /> Example: `2016-05-18T16:00:00Z`|
+| updated_at         | Auto-generated <br/> Type: `Date` <br/> Default: `current_timestamp` <br /> Example: `2016-05-22T16:00:00Z`|
+| live_at            | Auto-generated <br/> Type: `Date` <br/> Default: `current_timestamp` <br /> Example: `2016-05-18T16:00:00Z`|
+| end_at             | Auto-generated. 30 days after the live at date <br/> Type: `Date` <br/> Default: `current_timestamp` <br /> Example: `2016-08-18T16:00:00Z`|
 
 # Other
 
