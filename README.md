@@ -348,50 +348,106 @@ curl --location --request GET 'https://api.postajob.io/v1/campaign/5e6a1d8edf2bf
 
 If you campaign has no budget, we will still publish your job on all our fremium jobboards ( googleforjob, indeed, adzuna, joblift, etc ....)
 Some properties are mandatory for publishing your campaign. Here is the rule :
-@TODO RULE
 
-@TODO CURL
-@TODO RESPONSE
+| Name                       | Description                                                                       |
+| -------------------------- | --------------------------------------------------------------------------------- |
+| description `required`     | Should have more than 100 characters <br /> Type: `String`                        |
+| url `required`             | Should be a valid url <br /> Example: `https://postajob.io` <br /> Type: `String` |
+| contract `required`        | Type: `String`                                                                    |
+| category `required`        | Type: `String`                                                                    |
+| company_name `required`    | Type: `String`                                                                    |
+| company_country `required` | Type: `String`                                                                    |
+
+#### Example Request
+
+```
+curl --location --request PUT 'https://api.postajob.io/v1/campaign/publish/5e6a1d8edf2bf773891ff1df' --header 'x-apikey: xxxx-xxxxx-xxxxx-xxxx'
+```
+
+#### Example Response
+
+```
+{
+  ok: true,
+  campaign: {
+    salary: { min: 0, max: 0, unit: "hour", currency:"euro" },
+    age_range: { min: 27, max: 35},
+    name: "Rapid API TEST",
+    description: "",
+    company_name: "",
+    company_website: "",
+    company_country: "",
+    budget: 500,
+    skills: [],
+    interests: [],
+    language: [],
+    status: "",
+    created_at: "2020-01-27T21:03:14.578Z",
+    updated_at: "2020-01-27T21:03:14.578Z",
+    _id: "5e32f009743984072c8909b5",
+    cities: [],
+    tickets: 2,
+    step: 3,
+    user_email: "",
+    user_id: "",
+    contract: "",
+    category: "",
+    experience: "",
+    education: "",
+    url: "",
+    salary_range: { min: 2000, max: 3000 },
+    title: "",
+    text_1: "",
+    text_2: "",
+    banner: "",
+    logo: "",
+    live_at: "2020-03-19T10:03:20.168Z",
+    end_at: "2020-04-18T10:03:20.168Z",
+    locations: []
+  }
+}
+
+```
 
 # API reference
 
 ## Campaign
 
-| Name               | Description                         |
-| ------------------ | ----------------------------------- |
-| name `required`    | Name of your job <br/> Type: `String` <br /> Example: `Web developer` |
-| category `optional`          | Category of the job. Is mandatory for publising the campaign.<br/>Possible values : `[Accounting, Administrative, Arts and Design, Community & Social Services, Consulting, Education, Engineering, Entrepreneurship, Finance, Healthcare Services, Human Resources, Information Technology, Legal, Marketing, Media & Communications, Military & Protective Services, Operations, Program & Product Management, Purchasing, Quality Assurance, Real Estate, Research, Sales, Support, None]` <br/> Type: `String` <br /> Example: `Arts and Design` |
-| description `optional`        | Full text description of your job. Can contain html tags. Must be at least 100 caracters for publishing. <br/> Type: `String`|
-| company_name `optional`       | Name of the recruiting company <br/> Type: `String` <br /> Example: `Postajob`|
-| company_website `optional`    | Website of the recruiting company <br/> Type: `String` <br /> Example: `https://postajob.io`|
-| company_country `optional`    | Country of the recruiting company <br/> Type: `String` <br /> Example: `Netherlands`|
-| company_logo `optional`       | Logo of the recruiting company. Should be a valid url to a .png or .jpg image <br/> Type: `String` <br /> Example: `https://assets.postajob.io/logo.png` |
-| contract `optional`           | Under which contract is this job. Contract is mandatory for publishing.<br/>Possible values : [Full Time, Part Time, Freelance, Internship] <br/> Type: `String` <br /> Example: `Full Time`|
-| education `optional`          | The education the applicant should have.<br/>Possible values : `[No diploma required, High school, Bachelor, Master, Doctorate / PhD]` <br/> Type: `String` <br /> Example: `Bachelor`|
-| experience `optional`         | The experience the applicant should have.<br/>Possible values : `[Not specified, Junior, Mid-Level, Senior]` <br/> Type: `String` <br /> Example: `Mid-Level`|
-| salary.min `optional`         | Minimum salary for the job <br/> Type: `Number` <br /> Default: `0` <br /> Example: `1200`|
-| salary.max `optional`         | Maximum salary for the job <br/> Type: `Number` <br /> Default: `0` <br /> Example: `1800`|
-| salary.unit `optional`        | The unit fo the salary.<br/>Possible values : `[year, month, day, hour]` <br /> Default: `month`, <br /> Example: `year`|
-| salary.currency `optional`    | The currency of the salary.<br/>Possible values : `[euro, usd]` <br/> Type: `String` <br /> Default: `euro`|
-| budget `optional`             | Budget you want to set for your campaign. You need to add a budget on your campaign from our dashboard <br/> Type: `Number` <br /> Default: `0` <br /> Example: `1000`|
-| age_range.min `optional`      | Age minimum for the job ( useful for google ads and facebook ads job posting ) <br/> Type: `Number` <br /> Default: `16` <br /> Example: `20`|
-| age_range.max `optional`      | Age maximum for the job ( useful for google ads and facebook ads job posting ) <br/> Type: `Number` <br /> Default: `70` <br /> Example: `28`|
-| locations `optional`          | <br/> Type: `Array` <br /> Example: `[{name : "Paris"}, {name:"Islamabad"}]`|
-| skills `optional`             | Skills for the needed. Useful to target niche dashboard of for a google ads or facebook ads job <br/> Type: `Array` <br /> Example: `[Design, Testing, ..]`|
-| interests `optional`          | Interest of the candidate. Useful to target niche dashboard of for a google ads or facebook ads job <br/> Type: `Array` <br /> Example: `[Learning, Travelling, ..]`|
-| language `optional`           | Language spoke by the applicant. Useful to check in multiple country which this languages <br/> Type: `Array` <br /> Example: `[English, French, ..]`|
-| banner `optional`             | Background image of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `https://assets.postajob.io/cover.png`|
-| title `optional`              | Title of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `Web Developer required`|
-| text_1 `optional`             | Main text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `Join a innovative startup . TOP 50 EU`|
-| text_2 `optional`             | Secondary text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `We are looking for a React Native developer interested in building performant mobile apps on both the iOS and Android platforms. You will be responsible for architecting and building these applications, as well as coordinating with the teams responsible for other layers of the...`|
-| url `optional`                | Url of the job on your website. Mantory for the campaign publishing <br/> Type: `String` <br /> Example: `https://postajob.io`|
-| status `optional`             | Status of your campaign. Is read only value.<br/>Possible values : `[Draft, Published, Inactive, Cancelled, Live]` <br/> Type: `String` <br /> Default: `Draft` <br /> Example: `Live`|
-| user_id `required` | User id. Auto-generated <br/> Type: `String` <br /> Example: `your_custom_id`|
-| client_id `optional`          | Free field to save your client_id if you have any. You can filter on it when you retrieve campaigns <br/> Type: `String` <br /> Example: `your_custom_id`|
-| created_at         | Auto-generated <br/> Type: `Date` |
-| updated_at         | Auto-generated <br/> Type: `Date` |
-| live_at            | Auto-generated <br/> Type: `Date` |
-| end_at             | Auto-generated. 30 days after the live at date <br/> Type: `Date`|
+| Name                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name `required`            | Name of your job <br/> Type: `String` <br /> Example: `Web developer`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| category `optional`        | Category of the job. Is mandatory for publising the campaign.<br/>Possible values : `[Accounting, Administrative, Arts and Design, Community & Social Services, Consulting, Education, Engineering, Entrepreneurship, Finance, Healthcare Services, Human Resources, Information Technology, Legal, Marketing, Media & Communications, Military & Protective Services, Operations, Program & Product Management, Purchasing, Quality Assurance, Real Estate, Research, Sales, Support, None]` <br/> Type: `String` <br /> Example: `Arts and Design` |
+| description `optional`     | Full text description of your job. Can contain html tags. Must be at least 100 caracters for publishing. <br/> Type: `String`                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| company_name `optional`    | Name of the recruiting company <br/> Type: `String` <br /> Example: `Postajob`                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| company_website `optional` | Website of the recruiting company <br/> Type: `String` <br /> Example: `https://postajob.io`                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| company_country `optional` | Country of the recruiting company <br/> Type: `String` <br /> Example: `Netherlands`                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| company_logo `optional`    | Logo of the recruiting company. Should be a valid url to a .png or .jpg image <br/> Type: `String` <br /> Example: `https://assets.postajob.io/logo.png`                                                                                                                                                                                                                                                                                                                                                                                             |
+| contract `optional`        | Under which contract is this job. Contract is mandatory for publishing.<br/>Possible values : [Full Time, Part Time, Freelance, Internship] <br/> Type: `String` <br /> Example: `Full Time`                                                                                                                                                                                                                                                                                                                                                         |
+| education `optional`       | The education the applicant should have.<br/>Possible values : `[No diploma required, High school, Bachelor, Master, Doctorate / PhD]` <br/> Type: `String` <br /> Example: `Bachelor`                                                                                                                                                                                                                                                                                                                                                               |
+| experience `optional`      | The experience the applicant should have.<br/>Possible values : `[Not specified, Junior, Mid-Level, Senior]` <br/> Type: `String` <br /> Example: `Mid-Level`                                                                                                                                                                                                                                                                                                                                                                                        |
+| salary.min `optional`      | Minimum salary for the job <br/> Type: `Number` <br /> Default: `0` <br /> Example: `1200`                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| salary.max `optional`      | Maximum salary for the job <br/> Type: `Number` <br /> Default: `0` <br /> Example: `1800`                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| salary.unit `optional`     | The unit fo the salary.<br/>Possible values : `[year, month, day, hour]` <br /> Default: `month`, <br /> Example: `year`                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| salary.currency `optional` | The currency of the salary.<br/>Possible values : `[euro, usd]` <br/> Type: `String` <br /> Default: `euro`                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| budget `optional`          | Budget you want to set for your campaign. You need to add a budget on your campaign from our dashboard <br/> Type: `Number` <br /> Default: `0` <br /> Example: `1000`                                                                                                                                                                                                                                                                                                                                                                               |
+| age_range.min `optional`   | Age minimum for the job ( useful for google ads and facebook ads job posting ) <br/> Type: `Number` <br /> Default: `16` <br /> Example: `20`                                                                                                                                                                                                                                                                                                                                                                                                        |
+| age_range.max `optional`   | Age maximum for the job ( useful for google ads and facebook ads job posting ) <br/> Type: `Number` <br /> Default: `70` <br /> Example: `28`                                                                                                                                                                                                                                                                                                                                                                                                        |
+| locations `optional`       | <br/> Type: `Array` <br /> Example: `[{name : "Paris"}, {name:"Islamabad"}]`                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| skills `optional`          | Skills for the needed. Useful to target niche dashboard of for a google ads or facebook ads job <br/> Type: `Array` <br /> Example: `[Design, Testing, ..]`                                                                                                                                                                                                                                                                                                                                                                                          |
+| interests `optional`       | Interest of the candidate. Useful to target niche dashboard of for a google ads or facebook ads job <br/> Type: `Array` <br /> Example: `[Learning, Travelling, ..]`                                                                                                                                                                                                                                                                                                                                                                                 |
+| language `optional`        | Language spoke by the applicant. Useful to check in multiple country which this languages <br/> Type: `Array` <br /> Example: `[English, French, ..]`                                                                                                                                                                                                                                                                                                                                                                                                |
+| banner `optional`          | Background image of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `https://assets.postajob.io/cover.png`                                                                                                                                                                                                                                                                                                                                         |
+| title `optional`           | Title of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `Web Developer required`                                                                                                                                                                                                                                                                                                                                                                  |
+| text_1 `optional`          | Main text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `Join a innovative startup . TOP 50 EU`                                                                                                                                                                                                                                                                                                                                               |
+| text_2 `optional`          | Secondary text of your ads. It will be the image for your google ads, linkdin ads, or instagram ads or google for jobs etc ... <br/> Type: `String` <br /> Example: `We are looking for a React Native developer interested in building performant mobile apps on both the iOS and Android platforms. You will be responsible for architecting and building these applications, as well as coordinating with the teams responsible for other layers of the...`                                                                                       |
+| url `optional`             | Url of the job on your website. Mantory for the campaign publishing <br/> Type: `String` <br /> Example: `https://postajob.io`                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| status `optional`          | Status of your campaign. Is read only value.<br/>Possible values : `[Draft, Published, Inactive, Cancelled, Live]` <br/> Type: `String` <br /> Default: `Draft` <br /> Example: `Live`                                                                                                                                                                                                                                                                                                                                                               |
+| user_id `required`         | User id. Auto-generated <br/> Type: `String` <br /> Example: `your_custom_id`                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| client_id `optional`       | Free field to save your client_id if you have any. You can filter on it when you retrieve campaigns <br/> Type: `String` <br /> Example: `your_custom_id`                                                                                                                                                                                                                                                                                                                                                                                            |
+| created_at                 | Auto-generated <br/> Type: `Date`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| updated_at                 | Auto-generated <br/> Type: `Date`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| live_at                    | Auto-generated <br/> Type: `Date`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| end_at                     | Auto-generated. 30 days after the live at date <br/> Type: `Date`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 # Other
 
